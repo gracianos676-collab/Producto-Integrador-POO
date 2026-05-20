@@ -1,4 +1,5 @@
 package PuntodVenta;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -105,23 +106,56 @@ public class Main {
     }
 
     private void menuInventario() {
-        System.out.println("\n--- Opciones de Inventarios ---");
-        listarProductos();
-        System.out.print("Introduce el codigo del producto para agregar stock: ");
-        String id = scanner.nextLine();
-        Optional<Producto> optProd = repoProductos.obtenerPorId(id);
-        if (optProd.isPresent()) {
-            System.out.print("Introduce la cantidad a agregar: ");
-            try {
-                int cantidad = Integer.parseInt(scanner.nextLine());
-                optProd.get().agregarStock(cantidad);
-                System.out.println("Stock actualizado.");
-            } catch (NumberFormatException e) {
-                System.out.println("Error: Entrada inválida.");
+        String opcion = "";
+        do {
+            System.out.println("\n--- Gestión de Inventario ---");
+            listarProductos();
+            System.out.println("1.- Agregar Stock");
+            System.out.println("2.- Quitar Stock");
+            System.out.println("3.- Modificar Stock Total");
+            System.out.println("4.- Eliminar Producto del sistema");
+            System.out.println("5.- Volver al menú principal");
+            System.out.print("Selecciona una opción: ");
+            opcion = scanner.nextLine();
+
+            if (opcion.equals("5")) break;
+
+            System.out.print("Introduce el código del producto: ");
+            String id = scanner.nextLine();
+            Optional<Producto> optProd = repoProductos.obtenerPorId(id);
+
+            if (optProd.isEmpty()) {
+                System.out.println("Código no encontrado.");
+                continue;
             }
-        } else {
-            System.out.println("Código no encontrado.");
-        }
+
+            Producto p = optProd.get();
+            try {
+                switch (opcion) {
+                    case "1":
+                        System.out.print("Cantidad a agregar: ");
+                        p.agregarStock(Integer.parseInt(scanner.nextLine()));
+                        break;
+                    case "2":
+                        System.out.print("Cantidad a quitar: ");
+                        p.reducirStock(Integer.parseInt(scanner.nextLine()));
+                        break;
+                    case "3":
+                        System.out.print("Nuevo valor de stock total: ");
+                        
+                        p.setStock(Integer.parseInt(scanner.nextLine())); 
+                        break;
+                    case "4":
+                        repoProductos.eliminarPorId(id);
+                        System.out.println("Producto eliminado correctamente.");
+                        break;
+                    default:
+                        System.out.println("Opción no válida.");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Error: Debes ingresar un número válido.");
+            }
+        } while (!opcion.equals("5"));
     }
 
     private void menuPuntoVenta() {
