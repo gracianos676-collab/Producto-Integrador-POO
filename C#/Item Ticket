@@ -1,0 +1,39 @@
+public class ItemTicket
+{
+    private Producto producto;
+    private int cantidad;
+
+    public ItemTicket(
+        Producto producto,
+        int cantidad
+    )
+    {
+        this.producto = producto;
+        this.cantidad = cantidad;
+    }
+
+    public Producto GetProducto()
+    {
+        return producto;
+    }
+
+    public int GetCantidad()
+    {
+        return cantidad;
+    }
+
+    public void IncrementarCantidad(
+        int cant
+    )
+    {
+        cantidad += cant;
+    }
+
+    public double GetSubtotal()
+    {
+        return (
+            producto.GetPrecio()
+            * cantidad
+        );
+    }
+}
