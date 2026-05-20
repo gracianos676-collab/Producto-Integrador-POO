@@ -1,5 +1,7 @@
 package PuntodVenta;
+
 import java.util.Objects;
+
 public class Producto implements EntidadBase {
     private String id;
     private String nombre;
@@ -18,7 +20,7 @@ public class Producto implements EntidadBase {
     public String getNombre() { return nombre; }
     public double getPrecio() { return precio; }
     public int getStock() { return stock; }
-
+    public void setStock(int stock) { this.stock = stock; }
     public void setPrecio(double precio) { this.precio = precio; }
     public void agregarStock(int cantidad) { this.stock += cantidad; }
     public void reducirStock(int cantidad) { this.stock -= cantidad; }
