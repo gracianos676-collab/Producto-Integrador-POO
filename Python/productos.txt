@@ -1,0 +1,519 @@
+=== 1. ABARROTES (90 PRODUCTOS) ===
+1. Aceite 123 (1L) | $45.00 | Estándar
+2. Aceite Nutrioli (1L) | $52.00 | Estándar
+3. Aceite Capullo (1L) | $55.00 | Estándar
+4. Manteca de cerdo | $40.00 | A granel
+5. Manteca Inca (250g) | $22.00 | Estándar
+6. Arroz blanco | $32.00 | A granel
+7. Arroz Verde Valle (1kg) | $42.00 | Estándar
+8. Frijol pinto | $35.00 | A granel
+9. Frijol negro | $38.00 | A granel
+10. Frijol peruano Verde Valle (1kg) | $55.00 | Estándar
+11. Lentejas | $45.00 | A granel
+12. Haba seca | $60.00 | A granel
+13. Garbanzo | $50.00 | A granel
+14. Azúcar estándar | $28.00 | A granel
+15. Azúcar refinada | $32.00 | A granel
+16. Azúcar morena Zulka (1kg) | $38.00 | Estándar
+17. Sal fina de mar (1kg) | $18.00 | Estándar
+18. Sal La Fina (1kg) | $22.00 | Estándar
+19. Sal de grano | $15.00 | A granel
+20. Harina de trigo San Antonio (1kg) | $24.00 | Estándar
+21. Harina Selecta (1kg) | $26.00 | Estándar
+22. Harina para hot cakes Gamesa (500g) | $38.00 | Estándar
+23. Harina para hot cakes Pronto (500g) | $36.00 | Estándar
+24. Harina de maíz Maseca (1kg) | $22.00 | Estándar
+25. Harina Minsa (1kg) | $20.00 | Estándar
+26. Pan de caja Bimbo Blanco | $48.00 | Estándar
+27. Pan de caja Bimbo Integral | $55.00 | Estándar
+28. Pan tostado Bimbo | $35.00 | Estándar
+29. Tortillinas Tía Rosa (22 pz) | $45.00 | Estándar
+30. Tortillas de harina ligeras | $48.00 | Estándar
+31. Pasta La Moderna Spaghetti (200g) | $11.00 | Estándar
+32. Pasta La Moderna Codo (200g) | $11.00 | Estándar
+33. Pasta La Moderna Fideo (200g) | $11.00 | Estándar
+34. Pasta Yemina Letras (200g) | $12.00 | Estándar
+35. Pasta Barilla Penne Rigate (500g) | $35.00 | Estándar
+36. Puré de tomate Del Fuerte (210g) | $10.00 | Estándar
+37. Puré de tomate Herdez (210g) | $11.00 | Estándar
+38. Knorr Suiza (10 cubos) | $20.00 | Estándar
+39. Knorr Suiza polvo (250g) | $38.00 | Estándar
+40. Rico Pollo (8 cubos) | $15.00 | Estándar
+41. Mayonesa McCormick (400g) | $48.00 | Estándar
+42. Mayonesa Hellmann's (390g) | $45.00 | Estándar
+43. Mayonesa Kraft (390g) | $42.00 | Estándar
+44. Catsup Del Monte (320g) | $22.00 | Estándar
+45. Catsup Heinz (397g) | $28.00 | Estándar
+46. Mostaza McCormick (210g) | $18.00 | Estándar
+47. Mostaza French's (226g) | $25.00 | Estándar
+48. Atún Tuny en agua (140g) | $22.00 | Estándar
+49. Atún Tuny en aceite (140g) | $22.00 | Estándar
+50. Atún Dolores en agua (140g) | $24.00 | Estándar
+51. Atún Dolores en aceite (140g) | $24.00 | Estándar
+52. Sardinas Pícaro en tomate (425g) | $35.00 | Estándar
+53. Sardinas Dolores (425g) | $40.00 | Estándar
+54. Frijoles refritos Isadora (430g) | $24.00 | Estándar
+55. Frijoles La Sierra (430g) | $22.00 | Estándar
+56. Rajas de jalapeño La Costeña (220g) | $16.00 | Estándar
+57. Chiles chipotles San Marcos (215g) | $18.00 | Estándar
+58. Chiles jalapeños enteros Herdez (215g) | $17.00 | Estándar
+59. Ensalada de verduras Herdez (220g) | $15.00 | Estándar
+60. Granos de elote Herdez (220g) | $16.00 | Estándar
+61. Chícharos Del Monte (220g) | $14.00 | Estándar
+62. Leche condensada La Lechera (387g) | $30.00 | Estándar
+63. Leche evaporada Carnation (360g) | $25.00 | Estándar
+64. Media crema Nestlé (225g) | $18.00 | Estándar
+65. Café soluble Nescafé Clásico (120g) | $65.00 | Estándar
+66. Café soluble Nescafé Decaf (120g) | $70.00 | Estándar
+67. Café Legal (100g) | $35.00 | Estándar
+68. Café tostado y molido | $180.00 | A granel
+69. Sustituto de crema Coffee Mate (400g) | $68.00 | Estándar
+70. Té de manzanilla McCormick (25 sobres) | $22.00 | Estándar
+71. Té de limón Lipton (25 sobres) | $25.00 | Estándar
+72. Chocolate Abuelita (6 tablillas) | $55.00 | Estándar
+73. Chocolate Ibarra (6 tablillas) | $52.00 | Estándar
+74. Choco Milk (400g) | $45.00 | Estándar
+75. Cal-C-Tose (400g) | $48.00 | Estándar
+76. Nesquik sabor chocolate (350g) | $40.00 | Estándar
+77. Avena en hojuelas Quaker (500g) | $35.00 | Estándar
+78. Avena a granel | $25.00 | A granel
+79. Cereal Zucaritas (600g) | $65.00 | Estándar
+80. Cereal Choco Krispis (600g) | $68.00 | Estándar
+81. Cereal Corn Flakes (500g) | $45.00 | Estándar
+82. Cereal Froot Loops (400g) | $55.00 | Estándar
+83. Galletas Marías Gamesa (1 rollo) | $18.00 | Estándar
+84. Galletas Oreo (274g) | $38.00 | Estándar
+85. Galletas Emperador (273g) | $35.00 | Estándar
+86. Galletas Chokis (228g) | $36.00 | Estándar
+87. Galletas Ritz (1 paquete) | $20.00 | Estándar
+88. Galletas Saladitas Gamesa (1 paquete) | $18.00 | Estándar
+89. Mermelada de fresa McCormick (450g) | $45.00 | Estándar
+90. Cajeta Coronado (600g) | $85.00 | Estándar
+
+=== 2. BEBIDAS (60 PRODUCTOS) ===
+91. Coca-Cola Original (600ml) | $18.00 | Estándar
+92. Coca-Cola Sin Azúcar (600ml) | $18.00 | Estándar
+93. Coca-Cola Original (1.25L retornable) | $25.00 | Estándar
+94. Coca-Cola Original (2.5L retornable) | $35.00 | Estándar
+95. Coca-Cola Original (3L PET) | $48.00 | Estándar
+96. Sprite (600ml) | $17.00 | Estándar
+97. Sprite (2L) | $32.00 | Estándar
+98. Fanta Naranja (600ml) | $17.00 | Estándar
+99. Fanta Naranja (2L) | $32.00 | Estándar
+100. Fresca (600ml) | $17.00 | Estándar
+101. Mundet Rojo (600ml) | $17.00 | Estándar
+102. Joya de Manzana (600ml) | $17.00 | Estándar
+103. Pepsi (600ml) | $17.00 | Estándar
+104. Pepsi (2.5L retornable) | $32.00 | Estándar
+105. Pepsi (3L PET) | $45.00 | Estándar
+106. 7Up (600ml) | $16.00 | Estándar
+107. 7Up (2L) | $30.00 | Estándar
+108. Mirinda (600ml) | $16.00 | Estándar
+109. Manzanita Sol (600ml) | $16.00 | Estándar
+110. Squirt (600ml) | $17.00 | Estándar
+111. Squirt (2L) | $32.00 | Estándar
+112. Peñafiel Limonada (600ml) | $18.00 | Estándar
+113. Peñafiel Naranjada (600ml) | $18.00 | Estándar
+114. Agua mineral Peñafiel (600ml) | $16.00 | Estándar
+115. Agua mineral Topo Chico (600ml) | $18.00 | Estándar
+116. Agua mineral Ciel (600ml) | $15.00 | Estándar
+117. Agua purificada Ciel (1L) | $14.00 | Estándar
+118. Agua purificada Epura (1L) | $14.00 | Estándar
+119. Agua purificada Bonafont (1L) | $15.00 | Estándar
+120. Garrafón de agua Ciel (20L) | $48.00 | Estándar
+121. Garrafón de agua Epura (20L) | $48.00 | Estándar
+122. Garrafón de agua Bonafont (20L) | $52.00 | Estándar
+123. Jugo del Valle Mango (413ml) | $18.00 | Estándar
+124. Jugo del Valle Manzana (413ml) | $18.00 | Estándar
+125. Jugo del Valle Durazno (413ml) | $18.00 | Estándar
+126. Boing de Mango (500ml) | $16.00 | Estándar
+127. Boing de Guayaba (500ml) | $16.00 | Estándar
+128. Boing de Fresa (500ml triangulito) | $10.00 | Estándar
+129. Jumex Néctar Manzana (473ml lata) | $18.00 | Estándar
+130. Jumex Néctar Durazno (473ml lata) | $18.00 | Estándar
+131. V8 Splash Frutas (473ml) | $20.00 | Estándar
+132. Clamato (473ml) | $28.00 | Estándar
+133. Gatorade Naranja (500ml) | $24.00 | Estándar
+134. Gatorade Ponche de frutas (500ml) | $24.00 | Estándar
+135. Gatorade Limón (500ml) | $24.00 | Estándar
+136. Powerade Moras (500ml) | $22.00 | Estándar
+137. Suero Electrolit Fresa (625ml) | $32.00 | Estándar
+138. Suero Electrolit Coco (625ml) | $32.00 | Estándar
+139. Suerox Mora Azul (600ml) | $28.00 | Estándar
+140. Monster Energy (473ml) | $42.00 | Estándar
+141. Red Bull (250ml) | $45.00 | Estándar
+142. Volt Blue (473ml) | $25.00 | Estándar
+143. Vive100 (500ml) | $18.00 | Estándar
+144. Cerveza Corona Extra lata (355ml) | $20.00 | Estándar
+145. Cerveza Victoria lata (355ml) | $20.00 | Estándar
+146. Cerveza Modelo Especial lata (355ml) | $22.00 | Estándar
+147. Cerveza Tecate Light lata (355ml) | $20.00 | Estándar
+148. Cerveza Indio lata (355ml) | $20.00 | Estándar
+149. Cerveza Dos Equis Lager lata (355ml) | $22.00 | Estándar
+150. Caguama Corona (1.2L retornable) | $42.00 | Estándar
+
+=== 3. CREMERÍA (45 PRODUCTOS) ===
+151. Leche entera Lala (1L) | $28.00 | Perecedero
+152. Leche deslactosada Lala (1L) | $30.00 | Perecedero
+153. Leche light Lala (1L) | $29.00 | Perecedero
+154. Leche entera Alpura (1L) | $28.00 | Perecedero
+155. Leche deslactosada Alpura (1L) | $30.00 | Perecedero
+156. Leche entera Nutrileche (1.5L) | $32.00 | Estándar
+157. Crema ácida Lala (200g) | $22.00 | Perecedero
+158. Crema ácida Alpura (200g) | $22.00 | Perecedero
+159. Crema Lyncott (250g) | $35.00 | Perecedero
+160. Crema natural | $75.00 | A granel
+161. Yogur bebible Lala Fresa (220g) | $15.00 | Perecedero
+162. Yogur bebible Danup Fresa (220g) | $16.00 | Perecedero
+163. Yogur Yoplait natural (1kg) | $48.00 | Perecedero
+164. Yogur Oikos griego natural (150g) | $22.00 | Perecedero
+165. Danonino (42g x 4 pz) | $24.00 | Perecedero
+166. Yakult (80ml x 5 pz) | $35.00 | Perecedero
+167. Mantequilla Gloria con sal (90g) | $24.00 | Perecedero
+168. Mantequilla Gloria sin sal (90g) | $24.00 | Perecedero
+169. Margarina Iberia (90g) | $14.00 | Perecedero
+170. Margarina Primavera (90g) | $15.00 | Perecedero
+171. Queso Oaxaca | $180.00 | A granel
+172. Queso Panela | $160.00 | A granel
+173. Queso Fresco | $150.00 | A granel
+174. Queso Asadero | $170.00 | A granel
+175. Queso Chihuahua (Menonita) | $220.00 | A granel
+176. Queso Manchego rebanado Nochebuena (400g) | $85.00 | Perecedero
+177. Queso Amarillo Kraft rebanadas (200g) | $45.00 | Perecedero
+178. Queso Amarillo Lala rebanadas (144g) | $32.00 | Perecedero
+179. Queso Crema Philadelphia (190g) | $45.00 | Perecedero
+180. Queso Cottage Lyncott (250g) | $48.00 | Perecedero
+181. Jamón de pierna Bafar | $140.00 | A granel
+182. Jamón de pavo Fud | $160.00 | A granel
+183. Jamón Virginia pavo Zwan | $190.00 | A granel
+184. Jamón York San Rafael | $240.00 | A granel
+185. Jamón de cerdo económico | $90.00 | A granel
+186. Salchicha de pavo Fud | $85.00 | A granel
+187. Salchicha de pavo San Rafael | $120.00 | A granel
+188. Salchicha Viena Bafar | $75.00 | A granel
+189. Salchicha para asar Kir | $95.00 | A granel
+190. Chorizo de cerdo | $110.00 | A granel
+191. Chorizo español Zwan (200g) | $65.00 | Perecedero
+192. Longaniza | $100.00 | A granel
+193. Tocino ahumado Fud | $240.00 | A granel
+194. Mortadela Kir | $85.00 | A granel
+195. Queso de puerco Fud | $130.00 | A granel
+
+=== 4. BOTANAS (50 PRODUCTOS) ===
+196. Sabritas Sal (42g) | $18.00 | Estándar
+197. Sabritas Adobadas (42g) | $18.00 | Estándar
+198. Sabritas Crema y Especias (42g) | $18.00 | Estándar
+199. Ruffles Queso (50g) | $20.00 | Estándar
+200. Ruffles Original (50g) | $20.00 | Estándar
+201. Doritos Nacho (58g) | $20.00 | Estándar
+202. Doritos Incógnita (58g) | $20.00 | Estándar
+203. Doritos Flamin' Hot (58g) | $22.00 | Estándar
+204. Cheetos Torciditos Queso (52g) | $16.00 | Estándar
+205. Cheetos Poffs (45g) | $16.00 | Estándar
+206. Cheetos Flamin' Hot (52g) | $18.00 | Estándar
+207. Tostitos Salsa Verde (65g) | $22.00 | Estándar
+208. Tostitos Flamin' Hot (65g) | $24.00 | Estándar
+209. Rancheritos (58g) | $18.00 | Estándar
+210. Fritos Sal (53g) | $18.00 | Estándar
+211. Fritos Chorizo (53g) | $18.00 | Estándar
+212. Churrumais (58g) | $14.00 | Estándar
+213. Crujitos (50g) | $16.00 | Estándar
+214. Paketaxo Quexo (215g) | $45.00 | Estándar
+215. Paketaxo Mezcladito (215g) | $45.00 | Estándar
+216. Takis Fuego (62g) | $20.00 | Estándar
+217. Takis Original (62g) | $18.00 | Estándar
+218. Chips Sal (60g) | $22.00 | Estándar
+219. Chips Jalapeño (60g) | $22.00 | Estándar
+220. Chips Fuego (60g) | $24.00 | Estándar
+221. Runners (55g) | $16.00 | Estándar
+222. Totis Donitas Sal y Limón (110g) | $18.00 | Estándar
+223. Cacahuates Japoneses Nishikawa (160g) | $24.00 | Estándar
+224. Cacahuates Japoneses Sabritas (160g) | $26.00 | Estándar
+225. Cacahuates Hot Nuts Original (50g) | $16.00 | Estándar
+226. Cacahuates Mafer Salados (65g) | $20.00 | Estándar
+227. Cacahuates Mafer Surtido (65g) | $22.00 | Estándar
+228. Kacang Flamin' Hot (60g) | $18.00 | Estándar
+229. Cacahuate español salado | $85.00 | A granel
+230. Cacahuate enchilado | $80.00 | A granel
+231. Cacahuate garapiñado | $90.00 | A granel
+232. Cacahuate tostado con cáscara | $65.00 | A granel
+233. Pistaches salados | $350.00 | A granel
+234. Semillas de calabaza tostadas (Pipas) | $180.00 | A granel
+235. Nuez pecana entera | $400.00 | A granel
+236. Nuez pecana en trozos | $380.00 | A granel
+237. Almendras enteras | $320.00 | A granel
+238. Nuez de la India | $450.00 | A granel
+239. Arándanos deshidratados | $150.00 | A granel
+240. Ciruela pasa sin hueso | $140.00 | A granel
+241. Pasitas (Uva pasa) | $80.00 | A granel
+242. Gomitas de mango enchilado | $110.00 | A granel
+243. Papas fritas caseras | $160.00 | A granel
+244. Chicharrones de harina preparados | $90.00 | A granel
+245. Chicharrón de cerdo (Botanero) | $280.00 | A granel
+
+=== 5. FRUTAS (30 PRODUCTOS) ===
+246. Plátano Chiapas | $25.00 | Perecedero
+247. Plátano Macho | $35.00 | Perecedero
+248. Plátano Dominico | $40.00 | Perecedero
+249. Manzana Roja Starking | $45.00 | Perecedero
+250. Manzana Verde Granny Smith | $55.00 | Perecedero
+251. Manzana Golden | $50.00 | Perecedero
+252. Limón Colima (con semilla) | $40.00 | Perecedero
+253. Limón Persa (sin semilla) | $35.00 | Perecedero
+254. Naranja dulce | $25.00 | Perecedero
+255. Toronja | $30.00 | Perecedero
+256. Mandarina (en temporada) | $35.00 | Perecedero
+257. Guayaba | $40.00 | Perecedero
+258. Papaya Maradol | $38.00 | Perecedero
+259. Melón Chino | $30.00 | Perecedero
+260. Sandía | $18.00 | Perecedero
+261. Piña Miel | $45.00 | Perecedero
+262. Mango Ataulfo | $45.00 | Perecedero
+263. Mango Petacón (Tommy) | $35.00 | Perecedero
+264. Mango Manila | $50.00 | Perecedero
+265. Fresa (charola 500g) | $60.00 | Perecedero
+266. Uva verde sin semilla | $90.00 | Perecedero
+267. Uva roja sin semilla | $85.00 | Perecedero
+268. Aguacate Hass | $80.00 | Perecedero
+269. Aguacate Criollo | $60.00 | Perecedero
+270. Durazno | $70.00 | Perecedero
+271. Ciruela roja | $65.00 | Perecedero
+272. Kiwi | $110.00 | Perecedero
+273. Pera Anjou | $55.00 | Perecedero
+274. Pera Bosc | $60.00 | Perecedero
+275. Tuna blanca | $25.00 | Perecedero
+
+=== 6. VERDURAS (50 PRODUCTOS) ===
+276. Jitomate Saladet | $35.00 | Perecedero
+277. Jitomate Bola | $40.00 | Perecedero
+278. Tomate verde (Tomatillo) | $32.00 | Perecedero
+279. Cebolla blanca | $28.00 | Perecedero
+280. Cebolla morada | $35.00 | Perecedero
+281. Ajo (cabeza) | $10.00 | Estándar
+282. Papa blanca (Alpha) | $35.00 | Perecedero
+283. Papa cambray | $45.00 | Perecedero
+284. Zanahoria | $20.00 | Perecedero
+285. Calabacita tierna | $30.00 | Perecedero
+286. Chayote sin espinas | $25.00 | Perecedero
+287. Nopal entero | $25.00 | Perecedero
+288. Nopal picado (bolsa) | $15.00 | Perecedero
+289. Pepino | $22.00 | Perecedero
+290. Lechuga Romana (pieza) | $20.00 | Perecedero
+291. Lechuga Orejona (pieza) | $25.00 | Perecedero
+292. Lechuga Francesa (pieza) | $28.00 | Perecedero
+293. Col (Repollo) blanco | $20.00 | Perecedero
+294. Col morada | $30.00 | Perecedero
+295. Brócoli (pieza) | $35.00 | Perecedero
+296. Coliflor (pieza) | $40.00 | Perecedero
+297. Espinaca (manojo) | $12.00 | Perecedero
+298. Acelga (manojo) | $10.00 | Perecedero
+299. Cilantro (manojo) | $8.00 | Perecedero
+300. Perejil (manojo) | $8.00 | Perecedero
+301. Epazote (manojo) | $8.00 | Perecedero
+302. Hierbabuena (manojo) | $10.00 | Perecedero
+303. Apio (pieza) | $25.00 | Perecedero
+304. Rábano (manojo) | $15.00 | Perecedero
+305. Betabel | $22.00 | Perecedero
+306. Champiñones blancos | $85.00 | Perecedero
+307. Ejotes | $45.00 | Perecedero
+308. Chícharos frescos | $50.00 | Perecedero
+309. Pimiento morrón verde | $60.00 | Perecedero
+310. Pimiento morrón rojo | $80.00 | Perecedero
+311. Pimiento morrón amarillo | $85.00 | Perecedero
+312. Elote fresco (pieza) | $10.00 | Perecedero
+313. Camote amarillo | $35.00 | Perecedero
+314. Jícama | $28.00 | Perecedero
+315. Berenjena | $50.00 | Perecedero
+316. Alcachofa (pieza) | $35.00 | Perecedero
+317. Espárragos (manojo) | $75.00 | Perecedero
+318. Romeritos (en temporada) | $45.00 | Perecedero
+319. Flor de calabaza (manojo) | $25.00 | Perecedero
+320. Huitlacoche fresco | $120.00 | Perecedero
+321. Verdolagas (manojo) | $20.00 | Perecedero
+322. Poro (pieza) | $25.00 | Perecedero
+323. Cebollín (manojo) | $15.00 | Perecedero
+324. Hojas de tamal (manojo) | $45.00 | Estándar
+325. Hojas de plátano para tamal | $35.00 | Perecedero
+
+=== 7. SEMILLAS (35 PRODUCTOS) ===
+326. Maíz palomero | $35.00 | A granel
+327. Maíz cacahuazintle (para pozole) | $45.00 | A granel
+328. Maíz quebrado | $18.00 | A granel
+329. Semilla de girasol cruda | $80.00 | A granel
+330. Semilla de girasol tostada | $85.00 | A granel
+331. Linaza entera | $60.00 | A granel
+332. Linaza molida | $65.00 | A granel
+333. Chía | $90.00 | A granel
+334. Amaranto natural | $75.00 | A granel
+335. Ajonjolí blanco | $85.00 | A granel
+336. Ajonjolí negro | $95.00 | A granel
+337. Quinoa blanca | $140.00 | A granel
+338. Soya texturizada | $45.00 | A granel
+339. Trigo en grano | $30.00 | A granel
+340. Salvado de trigo | $25.00 | A granel
+341. Alpiste (consumo/pájaros) | $35.00 | A granel
+342. Mijo | $40.00 | A granel
+343. Piñón rosa pelado | $1200.00 | A granel
+344. Piñón blanco | $900.00 | A granel
+345. Semilla de cilantro | $120.00 | A granel
+346. Comino entero | $180.00 | A granel
+347. Comino molido | $190.00 | A granel
+348. Pimienta negra entera | $240.00 | A granel
+349. Pimienta negra molida | $250.00 | A granel
+350. Pimienta gorda (tabasco) | $260.00 | A granel
+351. Clavo de olor entero | $350.00 | A granel
+352. Canela en rama (ceilan) | $450.00 | A granel
+353. Canela molida | $380.00 | A granel
+354. Orégano seco | $150.00 | A granel
+355. Tomillo seco | $180.00 | A granel
+356. Laurel seco (hojas) | $160.00 | A granel
+357. Anís estrella | $350.00 | A granel
+358. Mejorana seca | $150.00 | A granel
+359. Nuez moscada (pieza) | $15.00 | A granel
+360. Bicarbonato de sodio | $45.00 | A granel
+
+=== 8. CARNES (40 PRODUCTOS) ===
+361. Bistec de res (Diezmillo) | $180.00 | Perecedero
+362. Bistec de res (Bola) | $190.00 | Perecedero
+363. Carne molida de res (Especial 90/10) | $185.00 | Perecedero
+364. Carne molida de res (Comercial 80/20) | $150.00 | Perecedero
+365. Costilla de res para asar | $170.00 | Perecedero
+366. Retazo con hueso (res) | $110.00 | Perecedero
+367. Suadero de res | $140.00 | Perecedero
+368. Falda de res (para deshebrar) | $185.00 | Perecedero
+369. Chamorro de res | $130.00 | Perecedero
+370. Milanesa de res (Pulpa) | $200.00 | Perecedero
+371. Arrachera marinada | $250.00 | Perecedero
+372. T-Bone de res | $280.00 | Perecedero
+373. Rib Eye | $350.00 | Perecedero
+374. Hígado de res | $80.00 | Perecedero
+375. Panza de res (Menudo) | $95.00 | Perecedero
+376. Bistec de cerdo (Pierna) | $110.00 | Perecedero
+377. Carne molida de cerdo | $100.00 | Perecedero
+378. Costilla de cerdo | $135.00 | Perecedero
+379. Chuleta ahumada de cerdo | $115.00 | Perecedero
+380. Chuleta natural de cerdo | $110.00 | Perecedero
+381. Maciza de cerdo | $115.00 | Perecedero
+382. Espinazo de cerdo | $85.00 | Perecedero
+383. Codillo de cerdo | $90.00 | Perecedero
+384. Manteca de cerdo empacada (1kg) | $45.00 | Perecedero
+385. Cabeza de lomo de cerdo | $120.00 | Perecedero
+386. Pechuga de pollo (entera con hueso) | $90.00 | Perecedero
+387. Pechuga de pollo sin hueso (filete) | $130.00 | Perecedero
+388. Pierna y muslo de pollo | $65.00 | Perecedero
+389. Alitas de pollo naturales | $75.00 | Perecedero
+390. Pollo entero | $70.00 | Perecedero
+391. Retazo de pollo (guacal, rabadilla) | $35.00 | Perecedero
+392. Mollejas de pollo | $40.00 | Perecedero
+393. Patas de pollo | $30.00 | Perecedero
+394. Filete de mojarra (Tilapia) congelado | $110.00 | Perecedero
+395. Mojarra entera limpia | $85.00 | Perecedero
+396. Filete de Cazón | $140.00 | Perecedero
+397. Camarón pacotilla (cocido) | $220.00 | Perecedero
+398. Camarón crudo con cabeza | $180.00 | Perecedero
+399. Camarón crudo sin cabeza | $210.00 | Perecedero
+400. Huevo blanco (Kilo) | $48.00 | Perecedero
+
+=== 9. DULCERÍA (70 PRODUCTOS) ===
+401. Paleta Payaso (45g) | $18.00 | Estándar
+402. Duvalín trisabor (15g) | $5.00 | Estándar
+403. Bubulubu (35g) | $12.00 | Estándar
+404. Pelón Pelo Rico (30g) | $10.00 | Estándar
+405. Mazapán De La Rosa original (28g) | $6.00 | Estándar
+406. Mazapán De La Rosa gigante (50g) | $10.00 | Estándar
+407. Pulparindo original (14g) | $4.00 | Estándar
+408. Pulparindo extra picante (14g) | $4.00 | Estándar
+409. Skwinkles Salsagheti (24g) | $12.00 | Estándar
+410. Lucas Muecas Mango (24g) | $14.00 | Estándar
+411. Lucas Muecas Chamoy (24g) | $14.00 | Estándar
+412. Lucas Gusano (36g) | $12.00 | Estándar
+413. Tamborines (pieza) | $3.00 | Estándar
+414. Kranky (50g) | $15.00 | Estándar
+415. Pecositas | $5.00 | Estándar
+416. Chocoretas (50g) | $15.00 | Estándar
+417. Panditas Ricolino clásicos (65g) | $16.00 | Estándar
+418. Panditas Enchilados (65g) | $16.00 | Estándar
+419. Pica Fresa (bolsa 100 pz) | $65.00 | Estándar
+420. Pica Goma (bolsa 100 pz) | $75.00 | Estándar
+421. Tutsi Pop (pieza) | $6.00 | Estándar
+422. Rockaleta (pieza) | $8.00 | Estándar
+423. Paleta Coronado de Cajeta (pieza) | $5.00 | Estándar
+424. Winis Original (paquete 4 pz) | $6.00 | Estándar
+425. Halls Menta (9 pz) | $12.00 | Estándar
+426. Halls Cereza (9 pz) | $12.00 | Estándar
+427. Trident Menta (4 pz) | $6.00 | Estándar
+428. Trident Yerbabuena (18 pz) | $20.00 | Estándar
+429. Clorets (paquete 4 pz) | $6.00 | Estándar
+430. Bubbaloo Fresa (pieza) | $2.00 | Estándar
+431. Carlos V original (18g) | $12.00 | Estándar
+432. Kinder Sorpresa (20g) | $30.00 | Estándar
+433. Kinder Delice (39g) | $20.00 | Estándar
+434. Ferrero Rocher (paquete 3 pz) | $35.00 | Estándar
+435. Snickers (48g) | $22.00 | Estándar
+436. Milky Way (48g) | $22.00 | Estándar
+437. M&M's Chocolate (47g) | $24.00 | Estándar
+438. M&M's Cacahuate (47g) | $24.00 | Estándar
+439. Hershey's Cookies 'n' Creme (43g) | $22.00 | Estándar
+440. Bocadín (pieza) | $4.00 | Estándar
+441. Mamut (30g) | $8.00 | Estándar
+442. Gansito Marinela (50g) | $22.00 | Estándar
+443. Pingüinos Marinela (80g) | $24.00 | Estándar
+444. Choco Roles Marinela (80g) | $24.00 | Estándar
+445. Submarinos Marinela (3 pz) | $20.00 | Estándar
+446. Barritas de Fresa Marinela (67g) | $18.00 | Estándar
+447. Triki-Trakes Marinela (86g) | $18.00 | Estándar
+448. Canelitas Marinela (90g) | $18.00 | Estándar
+449. Polvorones Marinela (113g) | $20.00 | Estándar
+450. Príncipe Marinela Chocolate (106g) | $22.00 | Estándar
+451. Gomitas de osito | $95.00 | A granel
+452. Gomitas de lombriz | $95.00 | A granel
+453. Gotas de chocolate | $160.00 | A granel
+454. Dulce de leche en chicloso | $85.00 | A granel
+455. Glorias de Linares (paquete 5 pz) | $55.00 | Estándar
+456. Obleas con cajeta Las Sevillanas | $45.00 | Estándar
+457. Alegrías de amaranto (pieza) | $10.00 | Estándar
+458. Palanqueta de cacahuate (pieza) | $12.00 | Estándar
+459. Cocada horneada (pieza) | $15.00 | Estándar
+460. Ate de membrillo (barra) | $45.00 | Estándar
+461. Ate de guayaba (barra) | $45.00 | Estándar
+462. Jamoncillo de leche (pieza) | $12.00 | Estándar
+463. Tamarindo dulce a granel | $90.00 | A granel
+464. Tarugos de tamarindo con chile (pieza) | $8.00 | Estándar
+465. Tarugos de tamarindo con azúcar (pieza) | $8.00 | Estándar
+466. Bombones mini | $85.00 | A granel
+467. Bombones gigantes | $80.00 | A granel
+468. Lunetas de chocolate | $110.00 | A granel
+469. Dulces de menta suave | $75.00 | A granel
+470. Caramelos macizos surtidos | $65.00 | A granel
+
+=== 10. CHILES FRESCOS Y SECOS (30 PRODUCTOS) ===
+471. Chile Jalapeño fresco | $35.00 | Perecedero
+472. Chile Serrano fresco | $45.00 | Perecedero
+473. Chile Habanero fresco | $90.00 | Perecedero
+474. Chile Poblano fresco | $45.00 | Perecedero
+475. Chile Árbol fresco verde | $80.00 | Perecedero
+476. Chile Manzano fresco | $75.00 | Perecedero
+477. Chile Chilaca fresco | $50.00 | Perecedero
+478. Chile Güero (Caribe) fresco | $65.00 | Perecedero
+479. Chile Pimiento Morrón verde fresco | $60.00 | Perecedero
+480. Chile Pimiento Morrón rojo fresco | $80.00 | Perecedero
+481. Chile Pimiento Morrón amarillo fresco | $85.00 | Perecedero
+482. Chile Ancho seco | $240.00 | A granel
+483. Chile Guajillo (puya) seco | $180.00 | A granel
+484. Chile Guajillo (ancho/no pica) seco | $190.00 | A granel
+485. Chile Pasilla seco | $220.00 | A granel
+486. Chile de Árbol seco | $160.00 | A granel
+487. Chile Morita seco | $250.00 | A granel
+488. Chile Chipotle seco (Meco) | $260.00 | A granel
+489. Chile Mulato seco | $230.00 | A granel
+490. Chile Cascabel seco | $280.00 | A granel
+491. Chile Piquín seco (entero) | $450.00 | A granel
+492. Chile Piquín molido | $380.00 | A granel
+493. Chile Tajín polvo (142g) | $32.00 | Estándar
+494. Chile Miguelito polvo (250g) | $25.00 | Estándar
+495. Chile Chiltepín seco | $800.00 | A granel
+496. Chile Costeño seco | $220.00 | A granel
+497. Chile Puya seco | $175.00 | A granel
+498. Chile Colorado seco | $195.00 | A granel
+499. Chile Tabaquero seco | $300.00 | A granel
+500. Chile Yahualica seco | $350.00 | A granel
