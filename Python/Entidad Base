@@ -1,0 +1,17 @@
+from abc import ABC, abstractmethod
+
+class EntidadBase(ABC):
+
+    @abstractmethod
+    def get_id(self):
+        pass
+
+
+class ProductoNoEncontradoException(Exception):
+    def __init__(self, mensaje):
+        super().__init__(mensaje)
+
+
+class StockInsuficienteException(Exception):
+    def __init__(self, mensaje):
+        super().__init__(mensaje)
