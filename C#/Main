@@ -1,0 +1,129 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class MainClass
+{
+    private Repositorio<Producto> repoProductos;
+    private Repositorio<Venta> repoVentas;
+
+    private int contadorTickets = 1;
+
+    public MainClass()
+    {
+        repoProductos =
+            new Repositorio<Producto>();
+
+        repoVentas =
+            new Repositorio<Venta>();
+
+        List<Producto> productos =
+            ManejadorArchivos
+            .CargarProductosDesdeTxt(
+                "productos.txt"
+            );
+
+        if (productos.Count == 0)
+        {
+            Console.WriteLine(
+                "\n[Aviso] No se encontraron productos."
+            );
+        }
+        else
+        {
+            foreach (Producto p in productos)
+            {
+                repoProductos.Agregar(p);
+            }
+
+            Console.WriteLine(
+                "\n[Éxito] Productos cargados."
+            );
+        }
+
+        List<Venta> ventas =
+            ManejadorArchivos
+            .CargarVentas();
+
+        foreach (Venta v in ventas)
+        {
+            repoVentas.Agregar(v);
+        }
+
+        if (ventas.Count > 0)
+        {
+            try
+            {
+                int ultimoId =
+                    int.Parse(
+                        ventas[ventas.Count - 1]
+                        .GetId()
+                    );
+
+                contadorTickets =
+                    ultimoId + 1;
+            }
+            catch
+            {
+                contadorTickets =
+                    ventas.Count + 1;
+            }
+        }
+    }
+
+    public void Iniciar()
+    {
+        string opcion = "";
+
+        do
+        {
+            Console.WriteLine(
+                "\n--- Menu Punto de Venta ---"
+            );
+
+            Console.WriteLine("1.- Productos");
+            Console.WriteLine("2.- Punto de Venta");
+            Console.WriteLine("3.- Inventario");
+            Console.WriteLine("4.- Historial");
+            Console.WriteLine("5.- Salir");
+
+            Console.Write(
+                "Que opcion deseas: "
+            );
+
+            opcion = Console.ReadLine();
+
+            switch (opcion)
+            {
+                case "1":
+                    MenuProductos();
+                    break;
+
+                case "2":
+                    MenuPuntoVenta();
+                    break;
+
+                case "3":
+                    MenuInventario();
+                    break;
+
+                case "4":
+                    ConsultarHistorialVentas();
+                    break;
+
+                case "5":
+                    Console.WriteLine(
+                        "Saliendo..."
+                    );
+                    break;
+
+                default:
+                    Console.WriteLine(
+                        "Opción incorrecta."
+                    );
+                    break;
+            }
+
+        } while (opcion != "5");
+    }
+}
