@@ -1,0 +1,105 @@
+package PuntodVenta;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+public class ManejadorArchivos {
+    private static final String ARCHIVO_VENTAS = "ventas.csv";
+    public static void guardarVenta(Venta venta) {
+        File archivo = new File(ARCHIVO_VENTAS);
+        boolean existe = archivo.exists();
+
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(archivo, true))) {
+          
+            if (!existe) {
+                bw.write("Ticket,Fecha,Subtotal,IVA,Total");
+                bw.newLine();
+            }
+            
+            String fila = String.format("%s,%s,%.2f,%.2f,%.2f",
+                    venta.getId(),
+                    venta.getFecha(),
+                    venta.getSubtotal(),
+                    venta.getIva(),
+                    venta.getTotal());
+            
+            bw.write(fila);
+            bw.newLine(); 
+        } catch (IOException e) {
+            System.out.println("Error al escribir en el archivo de ventas: " + e.getMessage());
+        }
+    }
+    public static List<Venta> cargarVentas() {
+        List<Venta> ventas = new ArrayList<>();
+        File archivo = new File(ARCHIVO_VENTAS);
+
+        if (!archivo.exists()) {
+            return ventas; // Retorna lista vacía si el archivo no existe aún
+        }
+
+        try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
+            String linea;
+            boolean esEncabezado = true;
+            while ((linea = br.readLine()) != null) {
+                if (esEncabezado) { // Saltamos la primera línea (encabezado)
+                    esEncabezado = false;
+                    continue;
+                }
+                
+                String[] partes = linea.split(",");
+                if (partes.length == 5) {
+                    String id = partes[0].trim();
+                    String fecha = partes[1].trim();
+                    double subtotal = Double.parseDouble(partes[2].trim());
+                    double iva = Double.parseDouble(partes[3].trim());
+                    double total = Double.parseDouble(partes[4].trim());
+                    
+                    ventas.add(new Venta(id, fecha, subtotal, iva, total));
+                }
+            }
+        } catch (IOException | NumberFormatException e) {
+            System.out.println("Error al leer el archivo de ventas: " + e.getMessage());
+        }
+        return ventas;
+    }
+
+    public static List<Producto> cargarProductosDesdeTxt(String ruta) {
+        List<Producto> productos = new ArrayList<>();
+        File archivo = new File(ruta);
+
+        if (!archivo.exists()) {
+            System.out.println("El archivo " + ruta + " no existe. Iniciando con inventario vacío.");
+            return productos;
+        }
+
+        try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
+            String linea;
+            while ((linea = br.readLine()) != null) {
+                if (linea.trim().isEmpty() || linea.startsWith("===")) {
+                    continue;
+                }
+
+                String[] partes = linea.split("\\|");
+                if (partes.length >= 2) {
+                  
+                    String idNombre = partes[0].trim();
+                    int puntoIndex = idNombre.indexOf('.');
+                    
+                    String idFormateado = String.format("%03d", Integer.parseInt(idNombre.substring(0, puntoIndex).trim()));
+                    String nombre = idNombre.substring(puntoIndex + 1).trim();
+                    
+                    double precio = Double.parseDouble(partes[1].trim().replace("$", ""));
+                    
+                    productos.add(new Producto(idFormateado, nombre, precio, 50));
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Error al cargar la lista de productos: " + e.getMessage());
+        }
+        return productos;
+    }
+}
