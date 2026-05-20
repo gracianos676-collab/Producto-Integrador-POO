@@ -1,0 +1,40 @@
+class Venta(EntidadBase):
+
+    def __init__(self, id, fecha, subtotal, iva, total):
+        self.id = id
+        self.fecha = fecha
+        self.subtotal = subtotal
+        self.iva = iva
+        self.total = total
+
+    def get_id(self):
+        return self.id
+
+    def get_fecha(self):
+        return self.fecha
+
+    def get_subtotal(self):
+        return self.subtotal
+
+    def get_iva(self):
+        return self.iva
+
+    def get_total(self):
+        return self.total
+
+    def __eq__(self, other):
+        if isinstance(other, Venta):
+            return self.id == other.id
+        return False
+
+    def __hash__(self):
+        return hash(self.id)
+
+    def __str__(self):
+        return (
+            f"Ticket: {self.id:<5} | "
+            f"Fecha: {self.fecha:<10} | "
+            f"Subtotal: ${self.subtotal:<7.2f} | "
+            f"IVA: ${self.iva:<6.2f} | "
+            f"Total: ${self.total:<7.2f}"
+        )
