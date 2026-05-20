@@ -1,0 +1,79 @@
+using System;
+
+class Venta : EntidadBase
+{
+    private string id;
+    private string fecha;
+    private double subtotal;
+    private double iva;
+    private double total;
+
+    public Venta(
+        string id,
+        string fecha,
+        double subtotal,
+        double iva,
+        double total
+    )
+    {
+        this.id = id;
+        this.fecha = fecha;
+        this.subtotal = subtotal;
+        this.iva = iva;
+        this.total = total;
+    }
+
+    public string GetId()
+    {
+        return id;
+    }
+
+    public string GetFecha()
+    {
+        return fecha;
+    }
+
+    public double GetSubtotal()
+    {
+        return subtotal;
+    }
+
+    public double GetIva()
+    {
+        return iva;
+    }
+
+    public double GetTotal()
+    {
+        return total;
+    }
+
+    public override bool Equals(object obj)
+    {
+        if (obj == null || GetType() != obj.GetType())
+        {
+            return false;
+        }
+
+        Venta venta = (Venta)obj;
+
+        return id.Equals(venta.id);
+    }
+
+    public override int GetHashCode()
+    {
+        return id.GetHashCode();
+    }
+
+    public override string ToString()
+    {
+        return string.Format(
+            "Ticket: {0,-5} | Fecha: {1,-10} | Subtotal: ${2,-7:F2} | IVA: ${3,-6:F2} | Total: ${4,-7:F2}",
+            id,
+            fecha,
+            subtotal,
+            iva,
+            total
+        );
+    }
+}
