@@ -1,0 +1,22 @@
+using System;
+
+interface EntidadBase
+{
+    string GetId();
+}
+
+class ProductoNoEncontradoException : Exception
+{
+    public ProductoNoEncontradoException(string mensaje)
+        : base(mensaje)
+    {
+    }
+}
+
+class StockInsuficienteException : Exception
+{
+    public StockInsuficienteException(string mensaje)
+        : base(mensaje)
+    {
+    }
+}
