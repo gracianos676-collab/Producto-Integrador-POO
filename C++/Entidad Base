@@ -1,0 +1,38 @@
+#include <iostream>
+#include <exception>
+#include <string>
+
+using namespace std;
+
+class EntidadBase {
+public:
+    virtual string getId() = 0;
+};
+
+class ProductoNoEncontradoException : public exception {
+private:
+    string mensaje;
+
+public:
+    ProductoNoEncontradoException(string msg) {
+        mensaje = msg;
+    }
+
+    const char* what() const noexcept override {
+        return mensaje.c_str();
+    }
+};
+
+class StockInsuficienteException : public exception {
+private:
+    string mensaje;
+
+public:
+    StockInsuficienteException(string msg) {
+        mensaje = msg;
+    }
+
+    const char* what() const noexcept override {
+        return mensaje.c_str();
+    }
+};
