@@ -1,0 +1,57 @@
+class Producto(EntidadBase):
+
+    def __init__(
+        self,
+        id,
+        nombre,
+        precio,
+        stock
+    ):
+
+        self.id = id
+        self.nombre = nombre
+        self.precio = precio
+        self.stock = stock
+
+    def get_id(self):
+        return self.id
+
+    def get_nombre(self):
+        return self.nombre
+
+    def get_precio(self):
+        return self.precio
+
+    def get_stock(self):
+        return self.stock
+
+    def set_stock(self, stock):
+        self.stock = stock
+
+    def set_precio(self, precio):
+        self.precio = precio
+
+    def agregar_stock(self, cantidad):
+        self.stock += cantidad
+
+    def reducir_stock(self, cantidad):
+        self.stock -= cantidad
+
+    def __eq__(self, other):
+
+        if isinstance(other, Producto):
+            return self.id == other.id
+
+        return False
+
+    def __hash__(self):
+        return hash(self.id)
+
+    def __str__(self):
+
+        return (
+            f"{self.id:<5} "
+            f"{self.nombre:<25} "
+            f"${self.precio:<8.2f} "
+            f"{self.stock:<5}"
+        )
