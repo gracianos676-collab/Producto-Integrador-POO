@@ -1,0 +1,529 @@
+from datetime import datetime
+
+class Main:
+
+    def __init__(self):
+
+        self.repo_productos = Repositorio()
+        self.repo_ventas = Repositorio()
+        self.contador_tickets = 1
+
+        productos_cargados = (
+            ManejadorArchivos.cargar_productos_desde_txt(
+                "productos.txt"
+            )
+        )
+
+        if len(productos_cargados) == 0:
+            print(
+                "\n[Aviso] No se encontraron productos."
+            )
+        else:
+            for p in productos_cargados:
+                self.repo_productos.agregar(p)
+
+            print(
+                f"\n[Éxito] Se cargaron "
+                f"{len(productos_cargados)} productos."
+            )
+
+        ventas_guardadas = (
+            ManejadorArchivos.cargar_ventas()
+        )
+
+        for v in ventas_guardadas:
+            self.repo_ventas.agregar(v)
+
+        if len(ventas_guardadas) > 0:
+            try:
+                ultimo_id = int(
+                    ventas_guardadas[-1].get_id()
+                )
+
+                self.contador_tickets = ultimo_id + 1
+
+            except:
+                self.contador_tickets = (
+                    len(ventas_guardadas) + 1
+                )
+
+    def iniciar(self):
+
+        opcion = ""
+
+        while opcion != "5":
+
+            print("\n--- Menu Punto de Venta ---")
+            print("1.- Productos")
+            print("2.- Punto de Venta")
+            print("3.- Inventario")
+            print("4.- Historial de Ventas")
+            print("5.- Salida")
+
+            opcion = input(
+                "Que opcion deseas: "
+            )
+
+            if opcion == "1":
+                self.menu_productos()
+
+            elif opcion == "2":
+                self.menu_punto_venta()
+
+            elif opcion == "3":
+                self.menu_inventario()
+
+            elif opcion == "4":
+                self.consultar_historial_ventas()
+
+            elif opcion == "5":
+                print("Saliendo del sistema...")
+
+            else:
+                print("Opción incorrecta.")
+
+    def menu_productos(self):
+
+        opcion = ""
+
+        while opcion != "3":
+
+            print("\n--- Opciones de Productos ---")
+            print("1.- Modificar Precio")
+            print("2.- Listado")
+            print("3.- Salida")
+
+            opcion = input(
+                "Que opcion deseas: "
+            )
+
+            if opcion == "1":
+                self.modificar_precio_producto()
+
+            elif opcion == "2":
+                self.listar_productos()
+
+    def modificar_precio_producto(self):
+
+        self.listar_productos()
+
+        id_producto = input(
+            "Introduce el codigo del producto: "
+        )
+
+        producto = (
+            self.repo_productos.obtener_por_id(
+                id_producto
+            )
+        )
+
+        if producto:
+
+            try:
+                nuevo_precio = float(
+                    input("Nuevo precio: ")
+                )
+
+                producto.set_precio(nuevo_precio)
+
+                print(
+                    "Precio modificado."
+                )
+
+            except:
+                print(
+                    "Número inválido."
+                )
+
+        else:
+            print(
+                "Producto no encontrado."
+            )
+
+    def listar_productos(self):
+
+        print(
+            "\nCód. Producto Precio Stock"
+        )
+
+        for p in self.repo_productos.obtener_todos():
+            print(p)
+
+    def menu_inventario(self):
+
+        opcion = ""
+
+        while opcion != "5":
+
+            print(
+                "\n--- Inventario ---"
+            )
+
+            self.listar_productos()
+
+            print("1.- Agregar Stock")
+            print("2.- Quitar Stock")
+            print("3.- Modificar Stock")
+            print("4.- Eliminar Producto")
+            print("5.- Salir")
+
+            opcion = input(
+                "Selecciona una opción: "
+            )
+
+            if opcion == "5":
+                break
+
+            id_producto = input(
+                "Código del producto: "
+            )
+
+            producto = (
+                self.repo_productos.obtener_por_id(
+                    id_producto
+                )
+            )
+
+            if not producto:
+                print(
+                    "Código no encontrado."
+                )
+                continue
+
+            try:
+
+                if opcion == "1":
+
+                    cantidad = int(
+                        input("Cantidad: ")
+                    )
+
+                    producto.agregar_stock(
+                        cantidad
+                    )
+
+                elif opcion == "2":
+
+                    cantidad = int(
+                        input("Cantidad: ")
+                    )
+
+                    producto.reducir_stock(
+                        cantidad
+                    )
+
+                elif opcion == "3":
+
+                    nuevo_stock = int(
+                        input("Nuevo stock: ")
+                    )
+
+                    producto.set_stock(
+                        nuevo_stock
+                    )
+
+                elif opcion == "4":
+
+                    self.repo_productos.eliminar_por_id(
+                        id_producto
+                    )
+
+                    print(
+                        "Producto eliminado."
+                    )
+
+            except:
+                print(
+                    "Número inválido."
+                )
+
+    def menu_punto_venta(self):
+
+        ticket_actual = []
+
+        opcion = ""
+
+        id_ticket = (
+            f"{self.contador_tickets:03}"
+        )
+
+        while opcion != "5":
+
+            print(
+                f"\nTicket No {id_ticket}"
+            )
+
+            print(
+                "1.- Agregar Producto"
+            )
+
+            print(
+                "2.- Eliminar Producto"
+            )
+
+            print(
+                "3.- Mostrar Ticket"
+            )
+
+            print(
+                "4.- Pagar"
+            )
+
+            print(
+                "5.- Cancelar"
+            )
+
+            opcion = input(
+                "Que opcion deseas: "
+            )
+
+            try:
+
+                if opcion == "1":
+
+                    self.agregar_a_ticket(
+                        ticket_actual
+                    )
+
+                elif opcion == "2":
+
+                    self.eliminar_de_ticket(
+                        ticket_actual
+                    )
+
+                elif opcion == "3":
+
+                    self.mostrar_ticket(
+                        ticket_actual
+                    )
+
+                elif opcion == "4":
+
+                    if len(ticket_actual) > 0:
+
+                        self.procesar_pago(
+                            ticket_actual,
+                            id_ticket
+                        )
+
+                        self.contador_tickets += 1
+
+                        opcion = "5"
+
+                    else:
+                        print(
+                            "Ticket vacío."
+                        )
+
+                elif opcion == "5":
+
+                    self.devolver_stock(
+                        ticket_actual
+                    )
+
+                    print(
+                        "Cancelando ticket."
+                    )
+
+            except Exception as e:
+                print(e)
+
+    def agregar_a_ticket(self, ticket):
+
+        id_producto = input(
+            "Código del producto: "
+        )
+
+        producto = (
+            self.repo_productos.obtener_por_id(
+                id_producto
+            )
+        )
+
+        if not producto:
+            raise ProductoNoEncontradoException(
+                "El código no existe."
+            )
+
+        if producto.get_stock() <= 0:
+            raise StockInsuficienteException(
+                "No hay stock suficiente."
+            )
+
+        encontrado = False
+
+        for item in ticket:
+
+            if (
+                item.get_producto()
+                .get_id() == id_producto
+            ):
+
+                item.incrementar_cantidad(1)
+
+                encontrado = True
+
+                break
+
+        if not encontrado:
+
+            ticket.append(
+                ItemTicket(producto, 1)
+            )
+
+        producto.reducir_stock(1)
+
+        print("Producto agregado.")
+
+    def eliminar_de_ticket(self, ticket):
+
+        id_producto = input(
+            "Código a eliminar: "
+        )
+
+        eliminado = False
+
+        for item in ticket:
+
+            if (
+                item.get_producto()
+                .get_id() == id_producto
+            ):
+
+                item.get_producto().agregar_stock(
+                    item.get_cantidad()
+                )
+
+                ticket.remove(item)
+
+                eliminado = True
+
+                break
+
+        if eliminado:
+            print(
+                "Producto eliminado."
+            )
+
+        else:
+            print(
+                "No está en ticket."
+            )
+
+    def devolver_stock(self, ticket):
+
+        for item in ticket:
+
+            item.get_producto().agregar_stock(
+                item.get_cantidad()
+            )
+
+    def mostrar_ticket(self, ticket):
+
+        if len(ticket) == 0:
+            print("Ticket vacío.")
+            return
+
+        for item in ticket:
+
+            print(
+                f"{item.get_producto().get_nombre():<20} "
+                f"Cant: {item.get_cantidad():<3} "
+                f"Subtotal: ${item.get_subtotal():.2f}"
+            )
+
+    def procesar_pago(
+        self,
+        ticket,
+        id_ticket
+    ):
+
+        subtotal = sum(
+            item.get_subtotal()
+            for item in ticket
+        )
+
+        iva = subtotal * 0.16
+
+        total = subtotal + iva
+
+        print(
+            f"\n--- TICKET PAGADO #{id_ticket} ---"
+        )
+
+        self.mostrar_ticket(ticket)
+
+        print(
+            f"Subtotal: ${subtotal:.2f}"
+        )
+
+        print(
+            f"IVA 16%: ${iva:.2f}"
+        )
+
+        print(
+            f"Total: ${total:.2f}"
+        )
+
+        fecha_actual = (
+            datetime.now().strftime(
+                "%d/%m/%Y"
+            )
+        )
+
+        nueva_venta = Venta(
+            id_ticket,
+            fecha_actual,
+            subtotal,
+            iva,
+            total
+        )
+
+        self.repo_ventas.agregar(
+            nueva_venta
+        )
+
+        ManejadorArchivos.guardar_venta(
+            nueva_venta
+        )
+
+        print(
+            "Venta registrada."
+        )
+
+    def consultar_historial_ventas(self):
+
+        print(
+            "\n--- HISTORIAL ---"
+        )
+
+        lista_ventas = (
+            self.repo_ventas.obtener_todos()
+        )
+
+        if len(lista_ventas) == 0:
+
+            print(
+                "No hay ventas."
+            )
+
+            return
+
+        for venta in lista_ventas:
+            print(venta)
+
+        total_caja = sum(
+            venta.get_total()
+            for venta in lista_ventas
+        )
+
+        print(
+            f"TOTAL EN CAJA: ${total_caja:.2f}"
+        )
+
+
+if __name__ == "__main__":
+
+    sistema = Main()
+
+    sistema.iniciar()
