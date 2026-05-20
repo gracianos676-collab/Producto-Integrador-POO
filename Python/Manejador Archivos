@@ -1,0 +1,96 @@
+import os
+
+class ManejadorArchivos:
+    ARCHIVO_VENTAS = "ventas.csv"
+
+    @staticmethod
+    def guardar_venta(venta):
+        existe = os.path.exists(ManejadorArchivos.ARCHIVO_VENTAS)
+
+        try:
+            with open(ManejadorArchivos.ARCHIVO_VENTAS, "a", encoding="utf-8") as archivo:
+
+                if not existe:
+                    archivo.write("Ticket,Fecha,Subtotal,IVA,Total\n")
+
+                fila = f"{venta.get_id()},{venta.get_fecha()},{venta.get_subtotal():.2f},{venta.get_iva():.2f},{venta.get_total():.2f}"
+
+                archivo.write(fila + "\n")
+
+        except IOError as e:
+            print("Error al escribir en el archivo de ventas:", e)
+
+    @staticmethod
+    def cargar_ventas():
+        ventas = []
+
+        if not os.path.exists(ManejadorArchivos.ARCHIVO_VENTAS):
+            return ventas
+
+        try:
+            with open(ManejadorArchivos.ARCHIVO_VENTAS, "r", encoding="utf-8") as archivo:
+
+                encabezado = True
+
+                for linea in archivo:
+
+                    if encabezado:
+                        encabezado = False
+                        continue
+
+                    partes = linea.strip().split(",")
+
+                    if len(partes) == 5:
+                        id_venta = partes[0].strip()
+                        fecha = partes[1].strip()
+                        subtotal = float(partes[2].strip())
+                        iva = float(partes[3].strip())
+                        total = float(partes[4].strip())
+
+                        ventas.append(
+                            Venta(id_venta, fecha, subtotal, iva, total)
+                        )
+
+        except (IOError, ValueError) as e:
+            print("Error al leer el archivo de ventas:", e)
+
+        return ventas
+
+    @staticmethod
+    def cargar_productos_desde_txt(ruta):
+        productos = []
+
+        if not os.path.exists(ruta):
+            print(f"El archivo {ruta} no existe. Iniciando con inventario vacío.")
+            return productos
+
+        try:
+            with open(ruta, "r", encoding="utf-8") as archivo:
+
+                for linea in archivo:
+
+                    if linea.strip() == "" or linea.startswith("==="):
+                        continue
+
+                    partes = linea.split("|")
+
+                    if len(partes) >= 2:
+
+                        id_nombre = partes[0].strip()
+                        punto_index = id_nombre.index(".")
+
+                        id_formateado = f"{int(id_nombre[:punto_index].strip()):03}"
+                        nombre = id_nombre[punto_index + 1:].strip()
+
+                        precio = float(
+                            partes[1].strip().replace("$", "")
+                        )
+
+                        productos.append(
+                            Producto(id_formateado, nombre, precio, 50)
+                        )
+
+        except Exception as e:
+            print("Error al cargar la lista de productos:", e)
+
+        return productos
