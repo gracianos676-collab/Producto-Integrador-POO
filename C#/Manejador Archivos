@@ -1,0 +1,168 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+
+class ManejadorArchivos
+{
+    private static readonly string ARCHIVO_VENTAS = "ventas.csv";
+
+    public static void GuardarVenta(Venta venta)
+    {
+        bool existe = File.Exists(ARCHIVO_VENTAS);
+
+        try
+        {
+            using (StreamWriter sw = new StreamWriter(ARCHIVO_VENTAS, true))
+            {
+                if (!existe)
+                {
+                    sw.WriteLine("Ticket,Fecha,Subtotal,IVA,Total");
+                }
+
+                string fila = string.Format(
+                    "{0},{1},{2:F2},{3:F2},{4:F2}",
+                    venta.GetId(),
+                    venta.GetFecha(),
+                    venta.GetSubtotal(),
+                    venta.GetIva(),
+                    venta.GetTotal()
+                );
+
+                sw.WriteLine(fila);
+            }
+        }
+        catch (IOException e)
+        {
+            Console.WriteLine(
+                "Error al escribir en el archivo de ventas: "
+                + e.Message
+            );
+        }
+    }
+
+    public static List<Venta> CargarVentas()
+    {
+        List<Venta> ventas = new List<Venta>();
+
+        if (!File.Exists(ARCHIVO_VENTAS))
+        {
+            return ventas;
+        }
+
+        try
+        {
+            using (StreamReader sr = new StreamReader(ARCHIVO_VENTAS))
+            {
+                string linea;
+                bool encabezado = true;
+
+                while ((linea = sr.ReadLine()) != null)
+                {
+                    if (encabezado)
+                    {
+                        encabezado = false;
+                        continue;
+                    }
+
+                    string[] partes = linea.Split(',');
+
+                    if (partes.Length == 5)
+                    {
+                        string id = partes[0].Trim();
+                        string fecha = partes[1].Trim();
+                        double subtotal = double.Parse(partes[2].Trim());
+                        double iva = double.Parse(partes[3].Trim());
+                        double total = double.Parse(partes[4].Trim());
+
+                        ventas.Add(
+                            new Venta(id, fecha, subtotal, iva, total)
+                        );
+                    }
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(
+                "Error al leer el archivo de ventas: "
+                + e.Message
+            );
+        }
+
+        return ventas;
+    }
+
+    public static List<Producto> CargarProductosDesdeTxt(string ruta)
+    {
+        List<Producto> productos = new List<Producto>();
+
+        if (!File.Exists(ruta))
+        {
+            Console.WriteLine(
+                "El archivo " + ruta +
+                " no existe. Iniciando con inventario vacío."
+            );
+
+            return productos;
+        }
+
+        try
+        {
+            using (StreamReader sr = new StreamReader(ruta))
+            {
+                string linea;
+
+                while ((linea = sr.ReadLine()) != null)
+                {
+                    if (
+                        string.IsNullOrWhiteSpace(linea) ||
+                        linea.StartsWith("===")
+                    )
+                    {
+                        continue;
+                    }
+
+                    string[] partes = linea.Split('|');
+
+                    if (partes.Length >= 2)
+                    {
+                        string idNombre = partes[0].Trim();
+
+                        int puntoIndex = idNombre.IndexOf('.');
+
+                        string idFormateado =
+                            int.Parse(
+                                idNombre.Substring(0, puntoIndex).Trim()
+                            ).ToString("D3");
+
+                        string nombre =
+                            idNombre.Substring(puntoIndex + 1).Trim();
+
+                        double precio =
+                            double.Parse(
+                                partes[1].Trim().Replace("$", "")
+                            );
+
+                        productos.Add(
+                            new Producto(
+                                idFormateado,
+                                nombre,
+                                precio,
+                                50
+                            )
+                        );
+                    }
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(
+                "Error al cargar la lista de productos: "
+                + e.Message
+            );
+        }
+
+        return productos;
+    }
+}
