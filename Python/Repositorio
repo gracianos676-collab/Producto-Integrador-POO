@@ -1,0 +1,72 @@
+class Repositorio:
+
+    def __init__(self):
+
+        self.elementos = []
+
+    def agregar(
+        self,
+        elemento
+    ):
+
+        self.elementos.append(
+            elemento
+        )
+
+    def obtener_todos(self):
+
+        return list(
+            self.elementos
+        )
+
+    def obtener_por_id(
+        self,
+        id
+    ):
+
+        for e in self.elementos:
+
+            if e.get_id() == id:
+                return e
+
+        return None
+
+    def modificar(
+        self,
+        id,
+        nuevo_objeto
+    ):
+
+        for i in range(
+            len(self.elementos)
+        ):
+
+            if (
+                self.elementos[i]
+                .get_id() == id
+            ):
+
+                self.elementos[i] = (
+                    nuevo_objeto
+                )
+
+                return True
+
+        return False
+
+    def eliminar_por_id(
+        self,
+        id
+    ):
+
+        for e in self.elementos:
+
+            if e.get_id() == id:
+
+                self.elementos.remove(
+                    e
+                )
+
+                return True
+
+        return False
