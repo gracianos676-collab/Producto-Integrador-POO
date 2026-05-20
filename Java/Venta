@@ -1,0 +1,44 @@
+package PuntodVenta;
+import java.util.Objects;
+
+class Venta implements EntidadBase {
+    private String id; 
+    private String fecha;
+    private double subtotal;
+    private double iva;
+    private double total;
+
+    public Venta(String id, String fecha, double subtotal, double iva, double total) {
+        this.id = id;
+        this.fecha = fecha;
+        this.subtotal = subtotal;
+        this.iva = iva;
+        this.total = total;
+    }
+
+    @Override
+    public String getId() { return id; }
+    public String getFecha() { return fecha; }
+    public double getSubtotal() { return subtotal; }
+    public double getIva() { return iva; }
+    public double getTotal() { return total; }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Venta venta = (Venta) o;
+        return Objects.equals(id, venta.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Ticket: %-5s | Fecha: %-10s | Subtotal: $%-7.2f | IVA: $%-6.2f | Total: $%-7.2f", 
+                id, fecha, subtotal, iva, total);
+    }
+}
