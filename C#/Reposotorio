@@ -1,0 +1,82 @@
+using System.Collections.Generic;
+
+public class Repositorio<T>
+    where T : EntidadBase
+{
+    private readonly List<T> elementos;
+
+    public Repositorio()
+    {
+        elementos = new List<T>();
+    }
+
+    public void Agregar(T elemento)
+    {
+        elementos.Add(elemento);
+    }
+
+    public List<T> ObtenerTodos()
+    {
+        return new List<T>(
+            elementos
+        );
+    }
+
+    public T ObtenerPorId(
+        string id
+    )
+    {
+        foreach (T e in elementos)
+        {
+            if (e.GetId() == id)
+            {
+                return e;
+            }
+        }
+
+        return default(T);
+    }
+
+    public bool Modificar(
+        string id,
+        T nuevoObjeto
+    )
+    {
+        for (
+            int i = 0;
+            i < elementos.Count;
+            i++
+        )
+        {
+            if (
+                elementos[i]
+                .GetId() == id
+            )
+            {
+                elementos[i] =
+                    nuevoObjeto;
+
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public bool EliminarPorId(
+        string id
+    )
+    {
+        foreach (T e in elementos)
+        {
+            if (e.GetId() == id)
+            {
+                elementos.Remove(e);
+
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
