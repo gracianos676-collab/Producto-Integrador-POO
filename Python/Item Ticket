@@ -1,0 +1,29 @@
+class ItemTicket:
+
+    def __init__(
+        self,
+        producto,
+        cantidad
+    ):
+
+        self.producto = producto
+        self.cantidad = cantidad
+
+    def get_producto(self):
+        return self.producto
+
+    def get_cantidad(self):
+        return self.cantidad
+
+    def incrementar_cantidad(
+        self,
+        cant
+    ):
+        self.cantidad += cant
+
+    def get_subtotal(self):
+
+        return (
+            self.producto.get_precio()
+            * self.cantidad
+        )
