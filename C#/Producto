@@ -1,0 +1,94 @@
+using System;
+
+public class Producto : EntidadBase
+{
+    private string id;
+    private string nombre;
+    private double precio;
+    private int stock;
+
+    public Producto(
+        string id,
+        string nombre,
+        double precio,
+        int stock
+    )
+    {
+        this.id = id;
+        this.nombre = nombre;
+        this.precio = precio;
+        this.stock = stock;
+    }
+
+    public string GetId()
+    {
+        return id;
+    }
+
+    public string GetNombre()
+    {
+        return nombre;
+    }
+
+    public double GetPrecio()
+    {
+        return precio;
+    }
+
+    public int GetStock()
+    {
+        return stock;
+    }
+
+    public void SetStock(int stock)
+    {
+        this.stock = stock;
+    }
+
+    public void SetPrecio(double precio)
+    {
+        this.precio = precio;
+    }
+
+    public void AgregarStock(int cantidad)
+    {
+        stock += cantidad;
+    }
+
+    public void ReducirStock(int cantidad)
+    {
+        stock -= cantidad;
+    }
+
+    public override bool Equals(object obj)
+    {
+        if (
+            obj == null ||
+            GetType() != obj.GetType()
+        )
+        {
+            return false;
+        }
+
+        Producto producto =
+            (Producto)obj;
+
+        return id.Equals(producto.id);
+    }
+
+    public override int GetHashCode()
+    {
+        return id.GetHashCode();
+    }
+
+    public override string ToString()
+    {
+        return string.Format(
+            "{0,-5} {1,-25} ${2,-8:F2} {3,-5}",
+            id,
+            nombre,
+            precio,
+            stock
+        );
+    }
+}
